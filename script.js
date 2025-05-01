@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // slideshow
+  // slideshow scripting
   var slideIndex = 0;
   showSlides();
 
@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // form validation for Donation
+  // form validation for Donation scription
   const donateForm = document.getElementById("donateForm");
   if (donateForm) {
     donateForm.addEventListener("submit",function (e) {
@@ -36,26 +36,31 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let errors = [];
 
+      //name validation
       if(donorname === "" ) {
         errors.push("Please enter your full name.");
       }else if (/\d/.test(donorname)) {
         errors.push("Full name cannot contain numbers.");
       }
 
+      //email validation
       if(donoremail === "") {
         errors.push("Please enter your email.");
       }else if (!/^\S+@\S+\.\S+$/.test(donoremail)) {
         errors.push("Please enter a valid email address.");
       }
 
+      // amount validation
       if(donoramount === "") {
         errors.push("Please enter your amount.");
       }
 
+      // payment validation
       if(donorpaymentmethod === "") {
         errors.push("Please select your payment method.");
       }
 
+      // message validation
       if(donormessage === "") {
         errors.push("Please enter your message.");
       }
@@ -70,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // form validation for join Volunteering
+  // form validation for join Volunteering scripting
   const volunteerForm = document.getElementById("volunteerForm");
   if (volunteerForm) {
     volunteerForm.addEventListener("submit",function (e) {
@@ -87,35 +92,42 @@ document.addEventListener("DOMContentLoaded", function () {
 
       let errors = [];
 
+      //name validation
       if(volunteername === "" ) {
         errors.push("Please enter your full name.");
       }else if (/\d/.test(volunteername)) {
         errors.push("Full name cannot contain numbers.");
       }
-
+      
+      // email validation
       if(volunteeremail === "") {
         errors.push("Please enter your email.");
       }else if (!/^\S+@\S+\.\S+$/.test(volunteeremail)) {
         errors.push("Please enter a valid email address.");
       }
 
+      // phone validation
       if(volunteerphone === "") {
         errors.push("Please enter your phone number.");
       } else if (!/^\d{10,15}$/.test(volunteerphone)) {
         errors.push("Phone number must contain only digits (10–15 digits).");
       }
 
+      //Date validation
       if(volunteeravailability === "") {
         errors.push("Please select your date.");
       }
-
+      
+      //skill validation
       if(volunteerskills === "") {
         errors.push("Please enter your skill or experience.");
       }
 
+      //message validation
       if(volunteermessage === "") {
         errors.push("Please enter your message.");
       }
+
 
       if(errors.length > 0){
         alert(errors.join("\n"));
@@ -130,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-  // Form validation for contact us
+  // Form validation for contact us scripting
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
