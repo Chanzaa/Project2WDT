@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet" />
+    <!-- favicon browser -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io//favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <!-- animate css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Capaigns</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h2>Charity</h2>
+        </div>
+    
+        <!-- Hamburger toggle checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="ri-menu-line"></i>
+        </label>
+    
+        <!-- Responsive navigation -->
+        <nav class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="contact.html" class="btn nav-contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    
+    <!-- involved -->
+    <section class="involved">
+      <img src="images/involved.jpg" alt="" />
+      <div class="involved-box">
+        <h3>Get Involved</h3>
+      </div>
+      <div class="involved-desc">
+        <p class="animate__animated animate__flash animate__infinite"><strong>Be a Part of the Change!</strong></p>
+        <p>
+          We believe that real change happens when communities come together.
+          Whether you’re an individual, a business, or a group looking to make a
+          difference, there are many ways to get involved and support our
+          mission. <br />
+          <br />
+          <b>
+            <em>
+              No action is too small—your time, skills, and generosity can help
+              transform lives.</em
+            ></b
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Donation Form -->
+    <section class="current-capaigns">
+      <div class="current-text-box">
+        <h1 id="currect-text">💡 Ways to Get Involved</h1>
+      </div>
+      <div class="container">
+        <div class="capaigns-text">
+          <h1>Donation :</h1>
+          <div class="container-form">
+            <form id="donateForm" action="" method="post">
+              <label for="donorname">
+                Full Name :
+                <br />
+                <input type="text" id="donorname" required />
+              </label>
+
+              <br />
+
+              <label for="donoremail">
+                Email Address :
+                <br />
+                <input type="email" id="donoremail" name="donoremail" required />
+              </label>
+
+              <br />
+
+              <label for="donoramount"
+                >Donation Amount (RM):
+                <br />
+                <select id="donoramount" name="donoramount" required>
+                  <option value="5">5</option>
+                  <option value="10">10</option>
+                  <option value="25">25</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                  
+                </select>
+              </label>
+
+              <br />
+
+              <label for="donorpaymentMethod"
+                >Payment Method:
+                <br />
+                <select id="donorpaymentMethod" name="donorpaymentMethod" required>
+                  <option value="creditCard">Credit/Debit Card</option>
+                  <option value="paypal">PayPal</option>
+                  <option value="bankTransfer">Bank Transfer</option>
+                </select>
+              </label>
+
+              <br />
+
+              <label for="donormessage"
+                >Leave a Message (Optional):
+                <br />
+                <textarea
+                  id="donormessage"
+                  name="donormessage"
+                  rows="4"
+                  placeholder="Write a message..."></textarea>
+              </label>
+
+              <div class="home-buttons">
+                <input class="btn" type="submit" value="Donation">
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="capaigns-image">
+          <img src="images/donation2.jpg" alt="Charity" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Voluteer form -->
+    <section class="current-capaigns">
+      <div class="container">
+        <div class="capaigns-text">
+          <h1>Volunteer :</h1>
+          <div class="container-form">
+            <form id="volunteerForm" method="post">
+              <label for="volunteername">
+                Full Name :
+                <br />
+                <input type="text" id="volunteername" name="volunteername" required />
+              </label>
+
+              <br />
+
+              <label for="volunteeremail">
+                Email Address :
+                <br />
+                <input type="email" id="volunteeremail" name="volunteeremail" required />
+              </label>
+
+              <br />
+
+              <label for="volunteerphone">
+                Phone Number :
+                <br />
+                <input type="tel" id="volunteerphone" name="volunteerphone" required />
+              </label>
+
+              <br />
+
+              <label for="volunteeravailability">
+                Availability :
+                <input type="date" id="volunteeravailability" name="availability" required />
+              </label>
+
+              <br />
+
+              <label for="volunteerskills">
+                Skills or Experience (Optinal) :
+                <br />
+                <input
+                  type="text"
+                  id="volunteerskills"
+                  name="volunteerskills"
+                  placeholder="E.g., Teaching, Event Planning, or just put (-)" />
+              </label>
+
+              <br />
+
+              <label for="volunteermessage">
+                Why do you want to volunteer? (Optional) :
+                <br />
+                <textarea
+                  id="volunteermessage"
+                  name="volunteermessage"
+                  rows="4"
+                  placeholder="Tell us about your motivation..."></textarea>
+              </label>
+
+              <div class="home-buttons">
+                <input class="btn" type="submit" value="Sign Up">
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="capaigns-image">
+          <img src="images/team.jpg" alt="Charity" />
+        </div>
+      </div>
+    </section>
+    <!-- short message before footer-->
+    <section class="message-involved">
+      <div class="message-desc">
+        <p>
+          No matter how you choose to get involved, your support brings us
+          closer to creating a world where kindness and generosity thrive.
+          Together, we can make a lasting impact
+          <strong>—one step, one action, one life at a time.</strong>
+        </p>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-get-support">
+        <div class="get-support">
+          <h3>Get Support</h3>
+          <div class="footer-link">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us </a>
+            <a href="campaigns.html">Campaigns</a>
+            <a href="contact.html">Get Involved</a>
+          </div>
+        </div>
+
+        <div class="get-support">
+          <h3>Media Social</h3>
+          <div class="footer-link">
+            <a href="#"><i class="ri-instagram-line"></i>Instagram</a>
+            <a href="#"><i class="ri-facebook-circle-line"></i>Facebook </a>
+            <a href="#"><i class="ri-twitter-x-line"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3 class="copyright">© Copyright by Charity 2025</h3>
+    </footer>
+    <script src="script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet" />
+
+    <!-- favicon browser -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io//favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest">
+    <title>Contact</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="logo">
+          <h2>Charity</h2>
+        </div>
+    
+        <!-- Hamburger toggle checkbox -->
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger">
+          <i class="ri-menu-line"></i>
+        </label>
+    
+        <!-- Responsive navigation -->
+        <nav class="nav-links">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="campaigns.html">Campaigns</a></li>
+            <li><a href="involved.html">Get Involved</a></li>
+            <li><a href="contact.html" class="btn nav-contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="contact">
+      <img src="images/contact.jpg" alt="" />
+      <div class="contact-box">
+        <h3>Contact Us</h3>
+      </div>
+      <div class="contact-desc">
+        <p><strong>Get in Touch – We’re Here to Help!</strong></p>
+        <p>
+          We believe in the power of connection and community. Whether you have
+          questions about our programs, want to collaborate, or need assistance,
+          we’re always here to listen. If you're looking to donate, volunteer,
+          or partner with us, feel free to reach out! Your support makes a
+          difference, and we’re happy to guide you on how you can be part of our
+          mission to create positive change. <br />
+        </p>
+
+        <b>
+          <i
+            ><p class="question-text">
+              Have a question or want to get involved? Reach out to us, and our
+              team will be happy to assist you.
+            </p></i
+          ></b
+        >
+      </div>
+    </section>
+
+    <div class="container-form">
+      <form id="contactForm" action="#" method="post">
+        <label for="fullname">
+          Full Name :
+          <input type="text" id="fullname" name="fullname" required />
+        </label>
+    
+        <label for="email">
+          Email Address :
+          <input type="email" id="email" name="email" required />
+        </label>
+    
+        <label for="phone">
+          Phone Number :
+          <input type="tel" id="phone" name="phone" required />
+        </label>
+    
+        <label for="subject">
+          Subject :
+          <select id="subject" name="subject" required>
+            <option value="">-- Select Subject --</option>
+            <option value="general">General Inquiry</option>
+            <option value="donation">Donation Assistance</option>
+            <option value="volunteer">Volunteering Opportunities</option>
+            <option value="partnership">Partnership & Sponsorship</option>
+            <option value="other">Other</option>
+          </select>
+        </label>
+
+        <label for="preferredDate">
+          Preferred Date :
+          <input type="date" id="preferredDate" name="preferredDate" required />
+        </label>
+    
+        <label for="message">
+          Your Message :
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            placeholder="Write your message here..."
+            required></textarea>
+        </label>
+        
+
+        <div class="capaigns-buttons">
+          <input class="btn" type="submit" value="Send Message">
+        </div>
+      </form>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-get-support">
+        <div class="get-support">
+          <h3>Get Support</h3>
+          <div class="footer-link">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us </a>
+            <a href="campaigns.html">Campaigns</a>
+            <a href="contact.html">Get Involved</a>
+          </div>
+        </div>
+
+        <div class="get-support">
+          <h3>Media Social</h3>
+          <div class="footer-link">
+            <a href="#"><i class="ri-instagram-line"></i>Instagram</a>
+            <a href="#"><i class="ri-facebook-circle-line"></i>Facebook </a>
+            <a href="#"><i class="ri-twitter-x-line"></i>Twitter</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <h3 class="copyright">© Copyright by Charity 2025</h3>
+    </footer>
+
+
+   <script src="script.js" defer> </script>
+    
+  </body>
+</html>
