@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // form validation for Donation scription
+  // form validation for Donation scripting
   const donateForm = document.getElementById("donateForm");
   if (donateForm) {
     donateForm.addEventListener("submit",function (e) {
